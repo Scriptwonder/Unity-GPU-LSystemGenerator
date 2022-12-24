@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6166685259735019774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6166685259735019772}
+  - component: {fileID: 6166685259735019773}
+  m_Layer: 0
+  m_Name: Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6166685259735019772
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6166685259735019774}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6166685259735019773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6166685259735019774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1392bd6e34346c84bbce7d7c5f5cf1f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  computeShader: {fileID: 7200000, guid: 4dc14495ade7d7640925df7ecbae288f, type: 3}
+  scanCS: {fileID: 7200000, guid: 378733cfa31a72745969afa52c217d98, type: 3}
+  axiom: F
+  ProceduralInstantiate: 0
+  randomSize: 0
+  generations: 2
+  rules:
+  - predecessor: 70
+    successor: F[+FFP][-FFP][&FFP][^FFP]F[-FO][+FO][&FO][^FO]F
+  LSystemDefiner:
+  - KeyString: F
+    ValueGameObject: {fileID: 3750738041043419636, guid: 5302e32fd2f9ac54e88308bd05d64212,
+      type: 3}
+    length: 2
+    scale: 1
+  - KeyString: P
+    ValueGameObject: {fileID: 3898319222282711366, guid: c02785675be03314c93a187f9935c9b8,
+      type: 3}
+    length: 0.1
+    scale: 1
+  - KeyString: O
+    ValueGameObject: {fileID: 1802906181823139942, guid: b09db9591fa9c8e4f9edba70b7c68940,
+      type: 3}
+    length: 0.1
+    scale: 1
